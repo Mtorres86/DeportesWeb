@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productos.css">
+    <link rel="shortcut icon" href="img/Logo.png">
+    <title>Productos | SportsWorld</title>
+
+</head>
+<body>
+
+	<header>
+		<img class="logo" src="img/Logo.png" alt="">
+		<h1 class="SportsWorld">SportsWorld</h1>
+
+		<div class="menu">
+			<a href="inicio.html">INICIO</a>
+			<a href="acercade.html">ACERCA DE</a>
+			<a href="productos.html">PRODUCTOS</a>
+			<a href="servicios.html">SERVICIOS</a>
+			<a href="galeria.html">GALERÍA</a>
+			<a href="contacto.html">CONTACTO</a>
+		</div>
+	</header>
+
+  <!--  -->
+  <h1>Tienda Deportiva</h1>
+    <h2>Categorías</h2>
+    <ul id="categorias">
+        <li data-categoria="todos" class="active">Todos</li>
+        <li data-categoria="futbol">Fútbol</li>
+        <li data-categoria="baloncesto">Baloncesto</li>
+        <li data-categoria="tenis">Tenis</li>
+    </ul>
+    <div id="producto-seleccionado">
+        <!-- Imágenes de productos
+        <p>Descripción: Esta camiseta de fútbol está hecha de un material transpirable y ligero, ideal para jugar al fútbol.</p>
+            <p>Precio: $29.99</p> -->
+        <img src="/img/camisaf1.png" alt="Camisola Fútbol;" data-categoria="futbol" data-info="Hecha de un material transpirable y ligero, ideal para jugar al fútbol" data-precio="L 1000">
+        <img src="/img/camisaf2.png" alt="Camisola Fútbol;" data-categoria="futbol" data-info="Hecha de un material transpirable y ligero, ideal para jugar al fútbol" data-precio="L 1000">
+        <img src="/img/camisaf1.png" alt="Camisola Fútbol;" data-categoria="futbol" data-info="Hecha de un material transpirable y ligero, ideal para jugar al fútbol" data-precio="L 1000">
+        <img src="/img/tacosf1.png" alt="Zapatillas Fútbol;" data-categoria="futbol" data-info="Hecha de un material transpirable y ligero, ideal para jugar al fútbol" data-precio="L 1000">
+        <img src="/img/tacosf2.png" alt="Zapatillas Fútbol;" data-categoria="futbol" data-info="Hecha de un material transpirable y ligero, ideal para jugar al fútbol" data-precio="L 1000">
+        <img src="/img/tacosf3.png" alt="Zapatillas Fútbol;" data-categoria="futbol" data-info="Hecha de un material transpirable y ligero, ideal para jugar al fútbol" data-precio="L 1000">
+        <img src="/img/camisaba1.png" alt="Camisola Baloncesto;" data-categoria="baloncesto" data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/camisaba2.png" alt="Camisola Baloncesto;" data-categoria="baloncesto"  data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/camisaba3.png" alt="Camisola Baloncesto;" data-categoria="baloncesto"  data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/tenisb1.png" alt="Zapatillas Baloncesto" data-categoria="baloncesto"  data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/tenisb2.png" alt="Zapatillas Baloncesto" data-categoria="baloncesto" data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/tenisb1.png" alt="Zapatillas Baloncesto" data-categoria="baloncesto" data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/camisat1.png" alt="Camisola Tenis" data-categoria="tenis" data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/camisat2.png" alt="Camisola Tenis" data-categoria="tenis" data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/camisat3.png" alt="Camisola Tenis" data-categoria="tenis" data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/raquetas.png" alt="Raqueta Tenis" data-categoria="tenis" data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/bolastenis1.png" alt="Bolas Tenis" data-categoria="tenis" data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+        <img src="/img/calzadotenis1.jpeg" alt="Zapatillas Tenis" data-categoria="tenis" data-info="Hecha de un material transpirable y ligero, ideal para jugar al baloncesto" data-precio="L 1000">
+
+
+       
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-info"></p>
+            <div id="modal-precio"></div> 
+        </div>
+    </div>
+
+    <footer>
+        <div width="100%">
+            <center>
+                <table class="table">
+                    <tr>
+                        <td width="370px"><img width="50px" height="50px" src="img/Logo.png" alt="SportsWorld" class="imgsw"></td>
+                        <td class="dr">SportsWorld | HN Tienda © 2023 Todos los derechos reservados.</td>
+                        <td width="55px"><a href="https://www.facebook.com" target="blank"><img  width="40px" height="40px" src="img/fb.png" alt="Facebook" class="imgfb"></a></td>
+                        <td width="55px"><a href="https://www.instagram.com" target="blank"><img  width="40px" height="40px" src="img/ig.png" alt="Instagram" class="imgig"></a></td>
+                        <td width="55px"><a href="https://www.twitter.com" target="blank"><img  width="40px" height="40px" src="img/tw.png" alt="Twitter" class="imgtw"></a></td>
+                        <td width="70px"><a href="https://www.youtube.com" target="blank"><img  width="45px" height="32px" src="img/youtube.png" alt="Youtube" class="imgyt"></a></td>
+    
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </footer>
+
+
+<script src="productos.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'></script>
+<script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
